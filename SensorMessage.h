@@ -36,7 +36,7 @@ class SensorMessage
     uint16_t PT_HE;                   ///< 16 bit unsigned integer representing the Helium presurrant supply
     uint16_t PT_Purge;                ///< 16 bit unsigned integer representing the Nitrogen purge supply
     uint16_t PT_Pneu;                 ///< 16 bit unsigned integer representing the Nitrogen pneumatic supply
-    uint16_t PT_FULE_PV;              ///< 16 bit unsigned integer representing the Gas above fuel in pressure vessel
+    uint16_t PT_FUEL_PV;              ///< 16 bit unsigned integer representing the Gas above fuel in pressure vessel
     uint16_t PT_LOX_PV;               ///< 16 bit unsigned integer representing the Gas above LOX in pressure vessel
     uint16_t PT_FUEL_INJ;             ///< 16 bit unsigned integer representing the Fuel pressure before entering chamber
     uint16_t PT_CHAM;                 ///< 16 bit unsigned integer representing the Chamber pressure
