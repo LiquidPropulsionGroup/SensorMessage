@@ -55,6 +55,6 @@ class SensorMessage
 
     uint8_t count;                    ///< Counts the number of messages being sent
     char buff[225];                   ///< Maximum char array of a sensor message
-}
+};
 
 #endif
