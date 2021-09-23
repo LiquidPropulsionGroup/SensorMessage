@@ -33,18 +33,21 @@ class SensorMessage
      */
     void Send();
 
-    uint16_t PT_HE;                   ///< 16 bit unsigned integer representing the Helium presurrant supply
-    uint16_t PT_Purge;                ///< 16 bit unsigned integer representing the Nitrogen purge supply
-    uint16_t PT_Pneu;                 ///< 16 bit unsigned integer representing the Nitrogen pneumatic supply
-    uint16_t PT_FUEL_PV;              ///< 16 bit unsigned integer representing the Gas above fuel in pressure vessel
-    uint16_t PT_LOX_PV;               ///< 16 bit unsigned integer representing the Gas above LOX in pressure vessel
-    uint16_t PT_FUEL_INJ;             ///< 16 bit unsigned integer representing the Fuel pressure before entering chamber
-    uint16_t PT_CHAM;                 ///< 16 bit unsigned integer representing the Chamber pressure
-    uint16_t TC_FUEL_PV;              ///< 16 bit unsigned integer representing the Gas above fuel in pressure vessel (possible surface mount)
-    uint16_t TC_LOX_PV;               ///< 16 bit unsigned integer representing the Gas above LOX in pressure vessel (possible surface mount)
-    uint16_t TC_LOX_Valve_Main;       ///< 16 bit unsigned integer representing the External sensor for valve chill in and force
-    uint16_t RC_LOX_Level;            ///< 16 bit unsigned integer representing the Capacitive level sensor of LOX in pressure vessel
-    uint16_t FT_Thrust;               ///< 16 bit unsigned integer representing the Load cell that measures thrust of engine
+    float PT_HE;                   ///< 16 bit unsigned integer representing the Helium presurrant supply [psi]
+    uint16_t PT_Purge;                ///< 16 bit unsigned integer representing the Nitrogen purge supply [psi]
+    uint16_t PT_Pneu;                 ///< 16 bit unsigned integer representing the Nitrogen pneumatic supply [psi]
+    uint16_t PT_FUEL_PV;              ///< 16 bit unsigned integer representing the Gas above fuel in pressure vessel [psi]
+    uint16_t PT_LOX_PV;               ///< 16 bit unsigned integer representing the Gas above LOX in pressure vessel [psi]
+    uint16_t PT_FUEL_INJ;             ///< 16 bit unsigned integer representing the Fuel pressure before entering chamber [psi]
+    uint16_t PT_CHAM;                 ///< 16 bit unsigned integer representing the Chamber pressure [psi]
+    uint16_t TC_FUEL_PV;              ///< 16 bit unsigned integer representing the Gas above fuel in pressure vessel (possible surface mount) [K]
+    uint16_t TC_LOX_PV;               ///< 16 bit unsigned integer representing the Gas above LOX in pressure vessel (possible surface mount) [K]
+	uint16_t TC_WATER_IN;			  ///< 16 bit unsigned integer representing the Water inlet temperature (Compression Probe) [K]
+	uint16_t TC_WATER_OUT;			  ///< 16 bit unsigned integer representing the Water outlet temperature (Surface Mount) [K]
+	uint16_t TC_CHAM_SENSOR;		  ///< 16 bit unsigned integer representing the temperature near the chamber PT [K]
+    uint16_t TC_LOX_Valve_Main;       ///< 16 bit unsigned integer representing the External sensor for valve chill in and force [K]
+    uint16_t RC_LOX_Level;            ///< 16 bit unsigned integer representing the Capacitive level sensor of LOX in pressure vessel [F]
+    uint16_t FT_Thrust;               ///< 16 bit unsigned integer representing the Load cell that measures thrust of engine [lbf]
     
   private:
     /**

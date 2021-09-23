@@ -38,7 +38,7 @@ void SensorMessage::Send()
  */
 void SensorMessage::SetBuffer()
 {
-    sprintf(buff, "{\"PT_HE\":%hu,\"PT_Purge\":%hu,\"PT_Pneu\":%hu,\"PT_FUEL_PV\":%hu,\"PT_LOX_PV\":%hu,\"PT_FUEL_INJ\":%hu,\"PT_CHAM\":%hu,\"TC_FUEL_PV\":%hu,\"TC_LOX_PV\":%hu,\"TC_LOX_Valve_Main\":%hu,\"RC_LOX_Level\":%hu,\"FT_Thrust\":%hu}",
+    sprintf(buff, "{\"PT_HE\":%d.%d,\"PT_Purge\":%hu,\"PT_Pneu\":%hu,\"PT_FUEL_PV\":%hu,\"PT_LOX_PV\":%hu,\"PT_FUEL_INJ\":%hu,\"PT_CHAM\":%hu,\"TC_FUEL_PV\":%hu,\"TC_LOX_PV\":%hu,\"TC_LOX_Valve_Main\":%hu,\"RC_LOX_Level\":%hu,\"FT_Thrust\":%hu}",
             this->PT_HE, this->PT_Purge, this->PT_Pneu, this->PT_FUEL_PV, this->PT_LOX_PV, this->PT_FUEL_INJ, this->PT_CHAM, this->TC_FUEL_PV, this->TC_LOX_PV, this->TC_LOX_Valve_Main, this->RC_LOX_Level, this->FT_Thrust);
             this->count++;
 }
